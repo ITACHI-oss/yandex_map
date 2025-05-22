@@ -25,7 +25,7 @@ class _SimpleYandexMapState extends State<SimpleYandexMap> {
             CameraUpdate.newCameraPosition(
               CameraPosition(target: point, zoom: 15),
             ),
-            animation: const MapAnimation(
+            animation: MapAnimation(
               type: MapAnimationType.smooth,
               duration: 1,
             ),
