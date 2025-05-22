@@ -25,10 +25,7 @@ class _SimpleYandexMapState extends State<SimpleYandexMap> {
             CameraUpdate.newCameraPosition(
               CameraPosition(target: point, zoom: 15),
             ),
-            animation: MapAnimation(
-              type: MapAnimationType.smooth,
-              duration: 1,
-            ),
+            animation: MapAnimation(type: MapAnimationType.smooth, duration: 1),
           );
 
           _mapObjects.clear();
@@ -70,7 +67,7 @@ class _SimpleYandexMapState extends State<SimpleYandexMap> {
       final place = placemarks.first;
       return '${place.street}, ${place.locality}, ${place.country}';
     } catch (e) {
-      return 'Ma’lumot topilmadi';
+      return "Ma'lumot topilmadi";
     }
   }
 
